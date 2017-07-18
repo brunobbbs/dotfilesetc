@@ -1,0 +1,13 @@
+package extract
+package foreign-env
+package https://gitlab.globoi.com/bastian/omf-bastian.git
+package nvm
+package peco
+package pyenv
+package python
+package rvm
+package tab
+package thefuck
+package z
+theme bobthefish
+theme default

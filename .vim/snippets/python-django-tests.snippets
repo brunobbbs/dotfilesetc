@@ -1,0 +1,35 @@
+snippet seleniumtesting
+
+	from django.test import LiveServerTestCase
+	from selenium import webdriver
+
+
+	class ${1:TESTNAME}(LiveServerTestCase):
+
+		def setUp(self):
+			self.browser = webdriver.Firefox()
+
+		def tearDown(self):
+			self.browser.quit()
+
+		def ${2:test_foo}(self):
+			# Gertrude opens her web browser, and goes to the admin page
+			self.browser.get(self.live_server_url + '/admin/')
+			
+			# She sees the familiar 'Django administration' heading
+			body = self.browser.find_element_by_tag_name('body')
+			self.assertIn('Django administration', body.text)
+			
+			# TODO: use the admin site to create a Poll
+			self.fail('finish this test')
+
+snippet djangotesting
+	from django.test import TestCase
+
+
+	class ${1:SimpleTestCase}(TestCase):
+		def ${2:simple_test_addition}(self):
+			"""
+			${3:Tests that 1 + 1 always equals 2.}
+			"""
+			${4:self.assertEqual(1 + 1, 2)}

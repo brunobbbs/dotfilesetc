@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/bruno/Documents/work/Caixa/CAIXA/ngcl/caixa.ngclcontenttypes/tags/1.1.0/caixa/ngclcontenttypes/browser'
+let g:netrw_dirhist_2='/home/bruno/.subversion/auth/svn.username'
+let g:netrw_dirhist_3='/home/bruno/Documentos/Bruno/Livros'
+let g:netrw_dirhist_4='/home/bruno/Documentos/svn/portal_internet/2-Implementacao/branches/pf.listatelefonica-v1.0.1-HOM.tar.gz'
+let g:netrw_dirhist_5='/home/bruno/.subversion/auth/svn.username'
+let g:netrw_dirhist_6='/home/bruno'
+let g:netrw_dirhist_7='/Users/bruno/Projects/desafio_gcom/BrunoBarbosa/Sistema/gcom/deploy/static/.git'

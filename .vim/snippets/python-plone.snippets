@@ -1,0 +1,81 @@
+# python-zope snippets for snipMate.
+# Created by zedr 2011
+
+# Testing Layer
+snippet testinglayer TestingLayer
+	from plone.app.testing import PloneSandboxLayer
+	from plone.app.testing import applyProfile
+	from plone.app.testing import PLONE_FIXTURE
+	from plone.app.testing import IntegrationTesting
+	
+	from plone.testing import z2
+
+	from zope.configuration import xmlconfig
+
+	class ${1:ClassName}(PloneSandboxLayer):
+
+		defaultBases = (PLONE_FIXTURE,)
+
+		def setUpZope(self, app, configurationContext):
+			# Load ZCML
+			import ${2:module}
+			self.loadZCML(package=$2)
+			z2.installProduct(app, '$2')
+
+		def setUpPloneSite(self, portal):
+			applyProfile(portal, '$2:default')
+
+		def tearDownZope(self, app):
+			z2.uninstallProduct(app, '$2')
+
+
+	${3:MYMODULE}_FIXTURE = $1()
+	$3_INTEGRATION_TESTING = IntegrationTesting(
+		bases=($3_FIXTURE,),
+		name="$1:Integration",
+	)
+
+snippet tests Tests
+	import unittest2 as unittest
+
+	import transaction
+
+	from plone.app.testing import setRoles
+	from plone.app.testing import TEST_USER_ID
+	from plone.testing.z2 import Browser
+
+	from Products.CMFCore.utils import getToolByName
+
+	from ${1:module}.testing import ${2:object}_INTEGRATION_TESTING
+
+	class TestSetup(unittest.TestCase):
+
+		layer = $2_INTEGRATION_TESTING
+
+		def test__verify_installation(self):
+			"""Check if installed"""
+			portal = self.layer['portal']
+			tool = getToolByName(portal, 'portal_quickinstaller')
+			self.assertTrue(tool.isProductInstalled('$1'))
+
+snippet messagefactory MessageFactory
+	from zope.i18nmessageid import MessageFactory
+
+	_ = $2MessageFactory = MessageFactory('${1:module}.${2:namespace}')
+
+snippet controlpanelview ControlPanelView
+	from plone.z3cform import layout
+	from plone.app.registry.browser.controlpanel import RegistryEditForm
+	from plone.app.registry.browser.controlpanel import ControlPanelFormWrapper
+
+	from ${1:module}.${2:namespace}.browser.interfaces import I${3:MySettings}
+	from $1.$2 import ${4:My}MessageFactory as _
+
+	class ${5:MyVeryOwn}ControlPanelForm(RegistryEditForm):
+		schema = I$3
+		label = _(u"$5 control panel")
+
+	$5ControlPanelView = layout.wrap_form(
+		$5ControlPanelForm, ControlPanelFormWrapper
+	)
+

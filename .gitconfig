@@ -1,0 +1,95 @@
+[user]
+	name = Bruno Barbosa
+	email = bruno.barbosa@corp.globo.com
+[branch]
+    autosetuprebase = always
+[color]
+	branch = true
+	decorate = true
+	diff = true
+	grep = true
+	interactive = true
+	showbranch = true
+	status = true
+	ui = true
+[color "branch"]
+	current = yellow black
+	local = yellow bold
+	remote = magenta bold
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red bold reverse
+[color "status"]
+	added = green bold
+	changed = red bold
+	untracked = yellow bold
+	branch = cyan bold reverse
+[diff]
+	tool = meld
+[core]
+	editor = vim
+	whitespace = tab-in-indent,tabwidth=4
+	pager = less -sFXRMW
+	commentChar = ";"
+[alias]
+	br = branch
+	co = checkout
+    cc = checkout
+    ci = commit
+	st = status
+	ss = stash
+	df = diff
+	ds = diff --staged
+	l = log -40 --branches=* --graph --decorate --abbrev-commit --oneline --all
+	ll = log --branches=* --graph --decorate --abbrev-commit
+	lo = log --branches=* --graph --decorate --abbrev-commit --oneline
+	la = log -25 --branches=* --graph --decorate --abbrev-commit --oneline --all
+	laa = log --branches=* --graph --decorate --abbrev-commit --oneline --all
+	lg = log --color --graph --decorate --abbrev-commit --pretty=format:'%C(bold red)%h%Creset -%C(bold yellow)%d%Creset %s %C(bold green)(%cr) %C(bold blue)<%an>%Creset'
+	lp = log -25 --graph --decorate --abbrev-commit --date=relative --pretty=format:'%C(bold yellow)%h%C(bold red) %ae%C(bold green)%x09%ad%C(reset)%x09%s%C(auto)%d'
+	lpp = log --graph --decorate --abbrev-commit --date=relative --pretty=format:'%C(bold yellow)%h%C(bold red) %ae%C(bold green)%x09%ad%C(reset)%x09%s%C(auto)%d'
+	lpd = log --graph --decorate --abbrev-commit --date=short --pretty=format:'%C(bold yellow)%h%C(bold red) %ae%C(bold green)%x09%ad%C(reset)%x20%s%C(auto)%d'
+	lpa = log -25 --branches=* --graph --decorate --abbrev-commit --date=relative --pretty=format:'%C(bold yellow)%h%C(bold red) %ae%C(bold green)%x09%ad%C(reset)%x09%s%C(auto)%d'
+	lpas = log -25 --all --graph --decorate --abbrev-commit --date=relative --pretty=format:'%C(bold yellow)%h%C(bold red) %ae%C(bold green)%x09%ad%C(reset)%x09%s%C(auto)%d'
+	lpaa = log --branches=* --graph --decorate --abbrev-commit --date=relative --pretty=format:'%C(bold yellow)%h%C(bold red) %ae%C(bold green)%x09%ad%C(reset)%x09%s%C(auto)%d'
+	lpaas = log --all --graph --decorate --abbrev-commit --date=relative --pretty=format:'%C(bold yellow)%h%C(bold red) %ae%C(bold green)%x09%ad%C(reset)%x09%s%C(auto)%d'
+	lpab = log --branches=* --graph --decorate --abbrev-commit --date=relative --pretty=format:'%C(bold yellow)%h%C(reset)%x20%s%C(auto)%d'
+	lpad = log --branches=* --graph --decorate --abbrev-commit --date=short --pretty=format:'%C(bold yellow)%h%C(bold red) %ae%C(bold green)%x09%ad%C(reset)%x20%s%C(auto)%d'
+	lpr = log --reverse --decorate --abbrev-commit --date=short --pretty=format:'%C(bold yellow)%h%C(bold red) %ae%C(bold green)%x09%ad%C(reset)%x20%s%C(auto)%d'
+	lpra = log --branches=* --reverse --decorate --abbrev-commit --date=short --pretty=format:'%C(bold yellow)%h%C(bold red) %ae%C(bold green)%x09%ad%C(reset)%x20%s%C(auto)%d'
+	cvp = commit -vp
+	cvpa = commit -vp --amend
+	cam = commit --amend
+	camn = commit --amend --no-edit
+	purum = pull --rebase upstream master
+	purom = pull --rebase origin master
+	pufum = pull --ff-only upstream master
+	pufom = pull --ff-only origin master
+	mff = merge --ff-only
+	mefum = merge --ff-only upstream/master
+	mefom = merge --ff-only origin/master
+	rum = rebase upstream/master
+	rom = rebase origin/master
+	rup = remote update -p
+	r = remote -v
+    fat = fetch --all --tags
+    fixup = "!f() { TARGET=$(git rev-parse "$1"); git commit --fixup=$TARGET ${@:2} && EDITOR=true git rebase -i --autostash --autosquash $TARGET^; }; f"
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[grep]
+	extendRegexp = true
+	lineNumber = true
+[rebase]
+	autosquash = true
+[sendemail]
+	smtpserver = smtp.gmail.com
+	smtpserverport = 587
+	smtpencryption = tls
+	smtpuser = bsbruno1@gmail.com
+	chainreplyto = false
+	from = Bruno Barbosa <bsbruno1@gmail.com>
