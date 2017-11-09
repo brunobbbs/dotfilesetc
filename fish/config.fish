@@ -1,5 +1,5 @@
 # path
-set -g -x PATH $PATH /usr/local/bin
+set -g -x PATH /usr/local/bin $PATH 
 set -g -x fish_greeting ''
 
 # golang
