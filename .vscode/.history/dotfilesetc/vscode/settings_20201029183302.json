@@ -1,0 +1,115 @@
+{
+    "workbench.startupEditor": "none",
+    "workbench.fontAliasing": "auto",
+    "workbench.sideBar.location": "left",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 12,
+    "editor.lineHeight": 14,
+    "editor.fontLigatures": true,
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+    "editor.renderIndentGuides": true,
+    "editor.renderLineHighlight": "all",
+    "editor.rulers": [79, 110],
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "editor.wordWrap": "off",
+    "editor.detectIndentation": true,
+    "editor.autoClosingBrackets": "always",
+    "editor.minimap.enabled": false,
+    "files.trimTrailingWhitespace": true,
+    "files.associations": {
+      "*.tpl": "html"
+    },
+    "git.enabled": true,
+    "git.path": "/usr/bin/git",
+    "go.buildTags": "",
+    "go.buildFlags": [],
+    "go.lintTool": "golint",
+    "go.lintFlags": [],
+    "go.vetFlags": [],
+    "go.coverOnSave": false,
+    "go.useCodeSnippetsOnFunctionSuggest": false,
+    "go.formatTool": "goreturns",
+    "go.formatFlags": [],
+    "go.gopath": "/Users/bruno.barbosa/go",
+    "go.gocodeAutoBuild": false,
+    "python.linting.enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.linting.pylintCategorySeverity.convention": "Hint",
+    "python.linting.pylintCategorySeverity.warning": "Error",
+    "window.title": "${rootName}${separator}${activeEditorShort}${separator}${activeEditorMedium}",
+    "window.zoomLevel": 1,
+    "terminal.integrated.fontFamily": "'Fira Mono for Powerline'",
+    "sync.gist": "04b5acbdf5555811ffefad39d9b0a7c8",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.forceDownload": false,
+    "sync.quietSync": false,
+    "[javascript]": {
+      "editor.tabSize": 2,
+      "editor.formatOnSave": false,
+    },
+    "[json]": {
+      "editor.tabSize": 2,
+    },
+    "[python]": {
+      "editor.tabSize": 4,
+      "editor.insertSpaces": true,
+      "editor.formatOnSave": true
+    },
+    "[go]": {
+      "editor.formatOnSave": true
+    },
+    "sync.removeExtensions": true,
+    "sync.syncExtensions": true,
+    "telemetry.enableTelemetry": false,
+    "eslint.alwaysShowStatus": true,
+    "eslint.packageManager": "yarn",
+    "eslint.nodePath": "/usr/local/lib/node_modules/",
+    "prettier.semi": false,
+    "terminal.integrated.fontWeightBold": "normal",
+    "terminal.external.osxExec": "/usr/local/bin/fish",
+    "highlight.regexes": {
+      "(// ?TODO:?)(.*)": [
+        {
+          "overviewRulerColor": "#ffcc00",
+          "backgroundColor": "#ffcc00",
+          "color": "#1f1f1f",
+          "fontWeight": "bold"
+        },
+        {
+          "backgroundColor": "#d9ad00",
+          "color": "#1f1f1f"
+        }
+      ],
+      "(// ?FIXME:?)(.*)": [
+        {
+          "overviewRulerColor": "#ff0000",
+          "backgroundColor": "#ff0000",
+          "color": "#1f1f1f",
+          "fontWeight": "bold"
+        },
+        {
+          "backgroundColor": "#d90000",
+          "color": "#1f1f1f"
+        }
+      ],
+      "(// )(@\\w+)": [
+        {},
+        {
+          "color": "#4de0ff"
+        }
+      ]
+    },
+    "bracketPairColorizer.showVerticalScopeLine": false,
+    "bracketPairColorizer.showHorizontalScopeLine": false,
+    "bracketPairColorizer.scopeLineRelativePosition": false,
+    "terminal.integrated.rendererType": "dom",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "liveshare.featureSet": "insiders",
+    "local-history.saveDelay": 3,
+    "local-history.path": "${workspaceFolder}/.vscode",
+    "ruby.intellisense": "rubyLocate"
+  }

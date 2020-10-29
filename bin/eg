@@ -1,5 +1,1 @@
-#!/usr/bin/python
-from eg import core
-
-
-core.run_eg()
+/Users/bruno.barbosa/projects/eg/eg_exec.py

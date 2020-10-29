@@ -23,4 +23,7 @@ source $HOME/.config/fish/aliases.fish
 # Python stuff
 set -xg PYTHONDONTWRITEBYTECODE 1  # Don't write bytecode files everywhere
 
-# eval (python -m virtualfish)
+# Atreyu/Auryn
+# set -gx ATREYU_COMPONENTS_PATH /Users/bruno.barbosa/Workspace/distribuicao/atreyu/components
+# set -gx ATREYU_PATH /Users/bruno.barbosa/Workspace/distribuicao/atreyu
+# rvm default

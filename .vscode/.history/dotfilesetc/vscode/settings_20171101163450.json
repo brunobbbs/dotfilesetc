@@ -1,0 +1,67 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.welcome.enabled": false,
+
+    "editor.fontFamily": "monaco",
+    "editor.fontSize": 12,
+    "editor.fontLigatures": true,
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+    "editor.renderIndentGuides": true,
+    "editor.renderLineHighlight": true,
+    "editor.overviewRulerLanes": 2,
+    "editor.rulers": [80, 110],
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "editor.wordWrap": "off",
+    "editor.detectIndentation": true,
+    "editor.autoClosingBrackets" : true,
+    "editor.insertSpaces": true,
+    "editor.minimap.enabled": false,
+
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.associations": {
+        "*.tpl": "html"
+    },
+
+    "git.enabled": true,
+    "git.path": "/usr/bin/git",
+
+    "go.buildOnSave": true,
+    "go.lintOnSave": true,
+    "go.vetOnSave": true,
+    "go.buildTags": "",
+    "go.buildFlags": [],
+    "go.lintTool": "golint",
+    "go.lintFlags": [],
+    "go.vetFlags": [],
+    "go.coverOnSave": false,
+    "go.useCodeSnippetsOnFunctionSuggest": false,
+    "go.formatOnSave": true,
+    "go.formatTool": "goreturns",
+    "go.formatFlags": [],
+    "go.gopath": "/Users/bruno.barbosa/go",
+    "go.gocodeAutoBuild": false,
+
+    "python.linting.enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.pylintCategorySeverity.convention": "Hint",
+    "python.linting.pylintCategorySeverity.warning": "Error",
+
+    "window.title": "${rootName}${separator}${activeEditorShort}${separator}${activeEditorMedium}",
+    "window.zoomLevel": 0,
+
+    "terminal.integrated.fontFamily": "'Fira Mono for Powerline'",
+    "sync.gist": "04b5acbdf5555811ffefad39d9b0a7c8",
+    "sync.lastUpload": "2017-07-18T13:37:38.125Z",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastDownload": "",
+    "sync.forceDownload": false,
+    "sync.anonymousGist": false,
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false
+}
