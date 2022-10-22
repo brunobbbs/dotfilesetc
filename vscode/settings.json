@@ -3,19 +3,22 @@
     "workbench.fontAliasing": "auto",
     "workbench.sideBar.location": "left",
     "editor.fontFamily": "Fira Code",
-    "editor.fontSize": 12,
-    "editor.lineHeight": 14,
+    "editor.fontSize": 10,
+    "editor.lineHeight": 13,
     "editor.fontLigatures": true,
     "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": true,
-    "editor.renderIndentGuides": true,
     "editor.renderLineHighlight": "all",
-    "editor.rulers": [79, 110],
+    "editor.rulers": [80, 110],
     "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
     "editor.wordWrap": "off",
     "editor.detectIndentation": true,
     "editor.autoClosingBrackets": "always",
     "editor.minimap.enabled": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.organizeImports": false,
+    },
     "files.trimTrailingWhitespace": true,
     "files.associations": {
       "*.tpl": "html"
@@ -29,25 +32,18 @@
     "go.vetFlags": [],
     "go.coverOnSave": false,
     "go.useCodeSnippetsOnFunctionSuggest": false,
-    "go.formatTool": "goreturns",
     "go.formatFlags": [],
-    "go.gopath": "/Users/bruno.barbosa/go",
+    "go.gopath": "/Users/bruno/Workspace/go",
     "go.gocodeAutoBuild": false,
     "python.linting.enabled": true,
     "python.linting.lintOnSave": true,
     "python.linting.pylintCategorySeverity.convention": "Hint",
     "python.linting.pylintCategorySeverity.warning": "Error",
     "window.title": "${rootName}${separator}${activeEditorShort}${separator}${activeEditorMedium}",
-    "window.zoomLevel": 1,
-    "terminal.integrated.fontFamily": "'Fira Mono for Powerline'",
-    "sync.gist": "04b5acbdf5555811ffefad39d9b0a7c8",
-    "sync.autoDownload": false,
-    "sync.autoUpload": false,
-    "sync.forceDownload": false,
-    "sync.quietSync": false,
+    "terminal.integrated.fontFamily": "Fira Code",
     "[javascript]": {
       "editor.tabSize": 2,
-      "editor.formatOnSave": false,
+      "editor.formatOnSave": true,
     },
     "[json]": {
       "editor.tabSize": 2,
@@ -60,13 +56,10 @@
     "[go]": {
       "editor.formatOnSave": true
     },
-    "sync.removeExtensions": true,
-    "sync.syncExtensions": true,
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
     "eslint.alwaysShowStatus": true,
     "eslint.packageManager": "yarn",
-    "eslint.nodePath": "/usr/local/lib/node_modules/",
-    "prettier.semi": false,
+    "eslint.enable": true,
     "terminal.integrated.fontWeightBold": "normal",
     "terminal.external.osxExec": "/usr/local/bin/fish",
     "highlight.regexes": {
@@ -101,15 +94,26 @@
         }
       ]
     },
-    "bracketPairColorizer.showVerticalScopeLine": false,
-    "bracketPairColorizer.showHorizontalScopeLine": false,
-    "bracketPairColorizer.scopeLineRelativePosition": false,
-    "terminal.integrated.rendererType": "dom",
+    "editor.bracketPairColorization.enabled": true,
     "workbench.iconTheme": "vscode-icons",
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "vsicons.dontShowNewVersionMessage": true,
-    "liveshare.featureSet": "insiders",
-    "local-history.saveDelay": 3,
-    "local-history.path": "${workspaceFolder}/.vscode",
-    "ruby.intellisense": "rubyLocate"
+    "files.watcherExclude": {
+      "**/.bloop": true,
+      "**/.metals": true,
+      "**/.ammonite": true
+    },
+    "redhat.telemetry.enabled": false,
+    "codesnap.showWindowControls": false,
+    "codesnap.shutterAction": "copy",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+      "**/.classpath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/.factorypath": true
+    },
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "Dracula Pro (Van Helsing)"
   }
